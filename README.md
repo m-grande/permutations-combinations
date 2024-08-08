@@ -10,27 +10,28 @@ Permutations and combinations are methods used to count the number of possible a
 - **Permutations**: The order of the objects matters.
 - **Combinations**: The order of the objects does not matter.
 
-### Key Concepts
+### Order matters
 
-1. **Order matters; repetition allowed** (Permutations with repetition):
+1. **Repetition allowed** (Permutations with repetition):
 
    - **Formula**: $n^r$
    - **Example**: Creating a password of 3 letters, using 26 different letters (with repetition allowed):
      $26^3 = 17,576\text{ possible passwords}$
 
-2. **Order matters; repetition not allowed** (Permutations without repetition):
+2. **Repetition not allowed** (Permutations without repetition):
 
    - **Formula**: $P(n, r) = \frac{n!}{(n-r)!}$
    - **Example**: Assigning 3 distinct prizes to 5 people:
      ${P}(5, 3) = \frac{5!}{(5-3)!} =\frac{5!}{2!} = 5\times4\times3= 60\text{ ways}$
 
-3. **Order doesn't matter; repetition not allowed** (Combinations):
+### Order doesn't matters
+1. **Repetition not allowed** (Combinations):
 
    - **Formula**: $C(n, k) = \frac{n!}{k!(n-k)!} = \binom{n}{k}$
    - **Example**: Selecting 3 people from a group of 10:
      $\binom{10}{3} =  \frac{10!}{3!(10-3)!} = \frac{10!}{3!\times7!} =\frac{10\times9\times8}{3\times2\times1} =120\text{ combinations}$
 
-4. **Order doesn't matter; repetition allowed** (Combinations with repetition):
+2. **Repetition allowed** (Combinations with repetition):
 
    - **Formula**: ${C}(n+k-1,k) = \frac{(n+k-1)!}{k!(n-1)!} =\binom{n + k - 1}{k}$
    - **Example**: Ordering 8 tacos from 3 different types:
